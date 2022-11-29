@@ -11,6 +11,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { TodoComponent } from './todo/todo.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -52,7 +53,8 @@ let myRoutes:Routes = [
     ProductListComponent,
     UserDataComponent,
     TodoComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
