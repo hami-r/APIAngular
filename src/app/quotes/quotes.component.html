@@ -1,0 +1,27 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row mt-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Author</th>
+                                <th>Quotes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let i of list.quotes" >
+                                    <td>{{i.author}}</td>
+                                    <td>{{i.quote}}</td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
