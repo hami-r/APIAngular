@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WebtoolsComponent } from './webtools/webtools.component';
 import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 let myRoutes:Routes = [
   {
@@ -15,6 +16,10 @@ let myRoutes:Routes = [
   {
     path:"us",
     component:UsPublicDataComponent
+  },
+  {
+    path:"userinfo",
+    component:UserInfoComponent
   }
 ]
 
@@ -22,7 +27,8 @@ let myRoutes:Routes = [
   declarations: [
     AppComponent,
     WebtoolsComponent,
-    UsPublicDataComponent
+    UsPublicDataComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
