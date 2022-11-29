@@ -9,6 +9,7 @@ import { UsPublicDataComponent } from './us-public-data/us-public-data.component
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
+import { TodoComponent } from './todo/todo.component';
 
 let myRoutes:Routes = [
   {
@@ -30,6 +31,10 @@ let myRoutes:Routes = [
   {
     path:"userdata",
     component:UserDataComponent
+  },
+  {
+    path:"todo",
+    component:TodoComponent
   }
 ]
 
@@ -40,7 +45,8 @@ let myRoutes:Routes = [
     UsPublicDataComponent,
     UserInfoComponent,
     ProductListComponent,
-    UserDataComponent
+    UserDataComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
