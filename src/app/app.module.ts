@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { WebtoolsComponent } from './webtools/webtools.component';
 import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 let myRoutes:Routes = [
   {
@@ -20,6 +21,10 @@ let myRoutes:Routes = [
   {
     path:"userinfo",
     component:UserInfoComponent
+  },
+  {
+    path:"product",
+    component:ProductListComponent
   }
 ]
 
@@ -28,7 +33,8 @@ let myRoutes:Routes = [
     AppComponent,
     WebtoolsComponent,
     UsPublicDataComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
