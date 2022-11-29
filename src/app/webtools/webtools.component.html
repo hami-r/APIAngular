@@ -1,0 +1,43 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row mt-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead class="text-center">
+                            <tr>
+                                <th>Passenger Name</th>
+                                <th>No of trips</th>
+                                <th>Airline Logo</th>
+                                <th>Airline Name</th>
+                                <th>Country</th>
+                                <th>Slogan</th>
+                                <th>Headquarters</th>
+                                <th>Website</th>
+                                <th>Established Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <ng-container *ngFor="let i of list.data">
+                                <tr *ngFor="let j of i.airline" class="text-center">
+                                    <td>{{i.name}}</td>
+                                    <td>{{i.trips}}</td>
+                                    <td><img height="30px" width="70px" src="{{j.logo}}" alt=""></td>
+                                    <td>{{j.name}}</td>
+                                    <td>{{j.country}}</td>
+                                    <td>{{j.slogan}}</td>
+                                    <td>{{j.head_quaters}}</td>
+                                    <td>{{j.website}}</td>
+                                    <td>{{j.established}}</td>
+                                </tr>
+                            </ng-container>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
