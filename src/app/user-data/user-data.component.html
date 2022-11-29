@@ -1,0 +1,28 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                    <div class="col col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex align-items-stretch" *ngFor="let i of userdata.users">
+                        <div class="card">
+                            <img height="250px" src="{{i.image}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">{{i.firstName}} {{i.lastName}}</h5>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">Age: {{i.age}}</li>
+                                  <li class="list-group-item">Gender: {{i.gender}}</li>
+                                  <li class="list-group-item">Email: {{i.email}}</li>
+                                  <li class="list-group-item">Phone: {{i.phone}}</li>
+                                  <li class="list-group-item">BirthDate: {{i.birthDate}}</li>
+                                  <li class="list-group-item">BloodGroup: {{i.bloodGroup}}</li>
+                                  <li class="list-group-item">Address:<br>{{i.address.address}},<br>{{i.address.city}},<br>{{i.address.state}},<br>P.O {{i.address.postalCode}}</li>
+                                </ul>
+                            
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

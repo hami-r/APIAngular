@@ -8,6 +8,7 @@ import { WebtoolsComponent } from './webtools/webtools.component';
 import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { UserDataComponent } from './user-data/user-data.component';
 
 let myRoutes:Routes = [
   {
@@ -25,6 +26,10 @@ let myRoutes:Routes = [
   {
     path:"product",
     component:ProductListComponent
+  },
+  {
+    path:"userdata",
+    component:UserDataComponent
   }
 ]
 
@@ -34,7 +39,8 @@ let myRoutes:Routes = [
     WebtoolsComponent,
     UsPublicDataComponent,
     UserInfoComponent,
-    ProductListComponent
+    ProductListComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
